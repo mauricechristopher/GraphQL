@@ -1,0 +1,26 @@
+npm install:
+  express
+  graphql
+  express-graphql
+  apollo-boost
+  react-apollo
+  graphql
+  lodash
+
+
+import { Link, NavLink } from 'react-router';
+
+
+Scheme File:
+  Defines types
+  defines relationships between types
+  root queries (how we get into the graph)
+
+
+Apollo:
+  Binds GraphQL to React                  Sends all the queries from react to node and returns them once fetched
+                                        /
+              Book List Component -> Apollo
+  React app /                              \ _ GraphQL Backend
+            \                              /    With Express and Mongo
+              Add Book Component -> Apollo
